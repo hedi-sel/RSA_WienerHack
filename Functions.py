@@ -4,7 +4,7 @@ from math import sqrt
 def GenPrime(Min, Max):
     while True:
         n = randint(Min//2, Max//2)*2+1
-        if CheckPrime_MillerRabin(n,10**-20):
+        if CheckPrime_MillerRabin(n,10**-10):
             return n
 
 def CheckPrime_Basic(n):
