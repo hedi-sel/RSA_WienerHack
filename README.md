@@ -1,3 +1,3 @@
-An implementation of the Weiner's attack on a weak RSA key set
+An implementation of the Weiner's attack on a weak RSA key set.
 
-'WienerAttack.py': The main file, commented to be self explanatory
+The main file, 'WienerAttack.py', is commented to explain the details of the method.
