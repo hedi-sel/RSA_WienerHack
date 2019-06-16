@@ -6,10 +6,10 @@ class RSA:
     #private key = d
     #public key = e,N
     def __init__(self, exponent, weak = False):
-        self.p = GenPrime(10**exponent,10**(exponent+1))
+        self.p = GenPrime(2**exponent,2**(exponent+1))
         self.q=self.p
         if not weak:
-            self.q = GenPrime(10**(exponent+2),10**(exponent+3))
+            self.q = GenPrime(2**(exponent+5),2**(exponent+6))
         else:
             self.q = GenPrime(self.p//2,self.p-1)
         self.N=self.p*self.q
